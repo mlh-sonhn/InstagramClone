@@ -21,9 +21,9 @@ class AppCoordinator: Coordinator {
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         
-        let imagesCoordinator = ImagesCoordinator()
-        imagesCoordinator.navigationController = navigationController
-        start(imagesCoordinator)
+        let collectionsCoordinator = CollectionsCoordinator()
+        collectionsCoordinator.navigationController = navigationController
+        start(collectionsCoordinator)
 
     }
 
