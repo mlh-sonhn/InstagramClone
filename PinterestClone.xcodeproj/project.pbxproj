@@ -16,9 +16,20 @@
 		04BA408325773CF2001FAAC0 /* PinterestCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA408225773CF2001FAAC0 /* PinterestCloneUITests.swift */; };
 		04BA40A425773FC9001FAAC0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA40A325773FC9001FAAC0 /* AppCoordinator.swift */; };
 		04BA40AA25773FE3001FAAC0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA40A925773FE3001FAAC0 /* Coordinator.swift */; };
-		04BA40BF257741A9001FAAC0 /* ImagesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA40BE257741A9001FAAC0 /* ImagesCoordinator.swift */; };
+		04BA40BF257741A9001FAAC0 /* CollectionsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA40BE257741A9001FAAC0 /* CollectionsCoordinator.swift */; };
 		04BA40E025774409001FAAC0 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA40DF25774409001FAAC0 /* Store.swift */; };
 		04BA40E525774419001FAAC0 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA40E425774419001FAAC0 /* ViewModelType.swift */; };
+		04EDA70F257785950085EA5A /* ActionSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDA70E257785950085EA5A /* ActionSubject.swift */; };
+		04EDA715257785CD0085EA5A /* UIControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDA714257785CD0085EA5A /* UIControl+Extensions.swift */; };
+		04EDA71A257785E90085EA5A /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDA719257785E90085EA5A /* UIButton+Extensions.swift */; };
+		04EDA720257786810085EA5A /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDA71F257786810085EA5A /* UIViewController.swift */; };
+		04EDA725257786A30085EA5A /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDA724257786A30085EA5A /* NSObject+Extensions.swift */; };
+		04EDA72A257786C70085EA5A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDA729257786C70085EA5A /* UIView+Extensions.swift */; };
+		04EDA730257786EF0085EA5A /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDA72F257786EF0085EA5A /* AppConstant.swift */; };
+		04EDA739257787220085EA5A /* CollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDA738257787220085EA5A /* CollectionsViewController.swift */; };
+		04EDA7412577879A0085EA5A /* CollectionsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EDA7402577879A0085EA5A /* CollectionsViewController.storyboard */; };
+		04EDA747257787FE0085EA5A /* CollectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDA746257787FE0085EA5A /* CollectionsViewModel.swift */; };
+		04EDA75725778D2A0085EA5A /* ImageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDA75625778D2A0085EA5A /* ImageCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +65,20 @@
 		04BA408425773CF2001FAAC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04BA40A325773FC9001FAAC0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		04BA40A925773FE3001FAAC0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		04BA40BE257741A9001FAAC0 /* ImagesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCoordinator.swift; sourceTree = "<group>"; };
+		04BA40BE257741A9001FAAC0 /* CollectionsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsCoordinator.swift; sourceTree = "<group>"; };
 		04BA40DF25774409001FAAC0 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		04BA40E425774419001FAAC0 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		04EDA70E257785950085EA5A /* ActionSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSubject.swift; sourceTree = "<group>"; };
+		04EDA714257785CD0085EA5A /* UIControl+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Extensions.swift"; sourceTree = "<group>"; };
+		04EDA719257785E90085EA5A /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		04EDA71F257786810085EA5A /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		04EDA724257786A30085EA5A /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		04EDA729257786C70085EA5A /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		04EDA72F257786EF0085EA5A /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		04EDA738257787220085EA5A /* CollectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsViewController.swift; sourceTree = "<group>"; };
+		04EDA7402577879A0085EA5A /* CollectionsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectionsViewController.storyboard; sourceTree = "<group>"; };
+		04EDA746257787FE0085EA5A /* CollectionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsViewModel.swift; sourceTree = "<group>"; };
+		04EDA75625778D2A0085EA5A /* ImageCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +195,10 @@
 		04BA40A125773F96001FAAC0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				04EDA74B257788250085EA5A /* Network */,
 				04BA40A825773FCD001FAAC0 /* Base */,
+				04EDA72E257786E30085EA5A /* Utilities */,
+				04EDA713257785B80085EA5A /* Extensions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -181,7 +206,7 @@
 		04BA40A225773F9F001FAAC0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				04BA40BA25774146001FAAC0 /* Images */,
+				04BA40BA25774146001FAAC0 /* Collections */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -195,18 +220,22 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		04BA40BA25774146001FAAC0 /* Images */ = {
+		04BA40BA25774146001FAAC0 /* Collections */ = {
 			isa = PBXGroup;
 			children = (
-				04BA40BE257741A9001FAAC0 /* ImagesCoordinator.swift */,
+				04BA40BE257741A9001FAAC0 /* CollectionsCoordinator.swift */,
+				04EDA7372577870E0085EA5A /* Views */,
+				04EDA745257787C90085EA5A /* DomainModels */,
+				04EDA75525778D130085EA5A /* Entity */,
 			);
-			path = Images;
+			path = Collections;
 			sourceTree = "<group>";
 		};
 		04BA40DD257743E6001FAAC0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				04BA40A925773FE3001FAAC0 /* Coordinator.swift */,
+				04EDA70E257785950085EA5A /* ActionSubject.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,6 +247,66 @@
 				04BA40E425774419001FAAC0 /* ViewModelType.swift */,
 			);
 			path = DomainModels;
+			sourceTree = "<group>";
+		};
+		04EDA713257785B80085EA5A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04EDA71E2577866F0085EA5A /* Combine */,
+				04EDA71F257786810085EA5A /* UIViewController.swift */,
+				04EDA724257786A30085EA5A /* NSObject+Extensions.swift */,
+				04EDA729257786C70085EA5A /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04EDA71E2577866F0085EA5A /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				04EDA714257785CD0085EA5A /* UIControl+Extensions.swift */,
+				04EDA719257785E90085EA5A /* UIButton+Extensions.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
+		04EDA72E257786E30085EA5A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				04EDA72F257786EF0085EA5A /* AppConstant.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		04EDA7372577870E0085EA5A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04EDA738257787220085EA5A /* CollectionsViewController.swift */,
+				04EDA7402577879A0085EA5A /* CollectionsViewController.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04EDA745257787C90085EA5A /* DomainModels */ = {
+			isa = PBXGroup;
+			children = (
+				04EDA746257787FE0085EA5A /* CollectionsViewModel.swift */,
+			);
+			path = DomainModels;
+			sourceTree = "<group>";
+		};
+		04EDA74B257788250085EA5A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		04EDA75525778D130085EA5A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				04EDA75625778D2A0085EA5A /* ImageCollection.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BA406D25773CF2001FAAC0 /* LaunchScreen.storyboard in Resources */,
+				04EDA7412577879A0085EA5A /* CollectionsViewController.storyboard in Resources */,
 				04BA406A25773CF2001FAAC0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,14 +439,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EDA72A257786C70085EA5A /* UIView+Extensions.swift in Sources */,
+				04EDA75725778D2A0085EA5A /* ImageCollection.swift in Sources */,
 				04BA40E025774409001FAAC0 /* Store.swift in Sources */,
-				04BA40BF257741A9001FAAC0 /* ImagesCoordinator.swift in Sources */,
+				04EDA70F257785950085EA5A /* ActionSubject.swift in Sources */,
+				04EDA720257786810085EA5A /* UIViewController.swift in Sources */,
+				04BA40BF257741A9001FAAC0 /* CollectionsCoordinator.swift in Sources */,
 				04BA40A425773FC9001FAAC0 /* AppCoordinator.swift in Sources */,
+				04EDA730257786EF0085EA5A /* AppConstant.swift in Sources */,
 				04BA406525773CEF001FAAC0 /* ViewController.swift in Sources */,
+				04EDA747257787FE0085EA5A /* CollectionsViewModel.swift in Sources */,
 				04BA40E525774419001FAAC0 /* ViewModelType.swift in Sources */,
 				04BA40AA25773FE3001FAAC0 /* Coordinator.swift in Sources */,
+				04EDA739257787220085EA5A /* CollectionsViewController.swift in Sources */,
+				04EDA715257785CD0085EA5A /* UIControl+Extensions.swift in Sources */,
 				04BA406125773CEF001FAAC0 /* AppDelegate.swift in Sources */,
+				04EDA71A257785E90085EA5A /* UIButton+Extensions.swift in Sources */,
 				04BA406325773CEF001FAAC0 /* SceneDelegate.swift in Sources */,
+				04EDA725257786A30085EA5A /* NSObject+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
