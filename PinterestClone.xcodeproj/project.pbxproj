@@ -10,11 +10,15 @@
 		04BA406125773CEF001FAAC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA406025773CEF001FAAC0 /* AppDelegate.swift */; };
 		04BA406325773CEF001FAAC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA406225773CEF001FAAC0 /* SceneDelegate.swift */; };
 		04BA406525773CEF001FAAC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA406425773CEF001FAAC0 /* ViewController.swift */; };
-		04BA406825773CEF001FAAC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BA406625773CEF001FAAC0 /* Main.storyboard */; };
 		04BA406A25773CF2001FAAC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BA406925773CF2001FAAC0 /* Assets.xcassets */; };
 		04BA406D25773CF2001FAAC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BA406B25773CF2001FAAC0 /* LaunchScreen.storyboard */; };
-		04BA407825773CF2001FAAC0 /* InstagramCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA407725773CF2001FAAC0 /* InstagramCloneTests.swift */; };
-		04BA408325773CF2001FAAC0 /* InstagramCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA408225773CF2001FAAC0 /* InstagramCloneUITests.swift */; };
+		04BA407825773CF2001FAAC0 /* PinterestCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA407725773CF2001FAAC0 /* PinterestCloneTests.swift */; };
+		04BA408325773CF2001FAAC0 /* PinterestCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA408225773CF2001FAAC0 /* PinterestCloneUITests.swift */; };
+		04BA40A425773FC9001FAAC0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA40A325773FC9001FAAC0 /* AppCoordinator.swift */; };
+		04BA40AA25773FE3001FAAC0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA40A925773FE3001FAAC0 /* Coordinator.swift */; };
+		04BA40BF257741A9001FAAC0 /* ImagesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA40BE257741A9001FAAC0 /* ImagesCoordinator.swift */; };
+		04BA40E025774409001FAAC0 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA40DF25774409001FAAC0 /* Store.swift */; };
+		04BA40E525774419001FAAC0 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA40E425774419001FAAC0 /* ViewModelType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,32 +27,36 @@
 			containerPortal = 04BA405525773CEF001FAAC0 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 04BA405C25773CEF001FAAC0;
-			remoteInfo = InstagramClone;
+			remoteInfo = PinterestClone;
 		};
 		04BA407F25773CF2001FAAC0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04BA405525773CEF001FAAC0 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 04BA405C25773CEF001FAAC0;
-			remoteInfo = InstagramClone;
+			remoteInfo = PinterestClone;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04BA405D25773CEF001FAAC0 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BA405D25773CEF001FAAC0 /* PinterestClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinterestClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BA406025773CEF001FAAC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04BA406225773CEF001FAAC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04BA406425773CEF001FAAC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04BA406725773CEF001FAAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04BA406925773CF2001FAAC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BA406C25773CF2001FAAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BA406E25773CF2001FAAC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04BA407325773CF2001FAAC0 /* InstagramCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		04BA407725773CF2001FAAC0 /* InstagramCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCloneTests.swift; sourceTree = "<group>"; };
+		04BA407325773CF2001FAAC0 /* PinterestCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinterestCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BA407725773CF2001FAAC0 /* PinterestCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestCloneTests.swift; sourceTree = "<group>"; };
 		04BA407925773CF2001FAAC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04BA407E25773CF2001FAAC0 /* InstagramCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		04BA408225773CF2001FAAC0 /* InstagramCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCloneUITests.swift; sourceTree = "<group>"; };
+		04BA407E25773CF2001FAAC0 /* PinterestCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinterestCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BA408225773CF2001FAAC0 /* PinterestCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestCloneUITests.swift; sourceTree = "<group>"; };
 		04BA408425773CF2001FAAC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BA40A325773FC9001FAAC0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		04BA40A925773FE3001FAAC0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		04BA40BE257741A9001FAAC0 /* ImagesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCoordinator.swift; sourceTree = "<group>"; };
+		04BA40DF25774409001FAAC0 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		04BA40E425774419001FAAC0 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +87,9 @@
 		04BA405425773CEF001FAAC0 = {
 			isa = PBXGroup;
 			children = (
-				04BA405F25773CEF001FAAC0 /* InstagramClone */,
-				04BA407625773CF2001FAAC0 /* InstagramCloneTests */,
-				04BA408125773CF2001FAAC0 /* InstagramCloneUITests */,
+				04BA405F25773CEF001FAAC0 /* PinterestClone */,
+				04BA407625773CF2001FAAC0 /* PinterestCloneTests */,
+				04BA408125773CF2001FAAC0 /* PinterestCloneUITests */,
 				04BA405E25773CEF001FAAC0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,51 +97,135 @@
 		04BA405E25773CEF001FAAC0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04BA405D25773CEF001FAAC0 /* InstagramClone.app */,
-				04BA407325773CF2001FAAC0 /* InstagramCloneTests.xctest */,
-				04BA407E25773CF2001FAAC0 /* InstagramCloneUITests.xctest */,
+				04BA405D25773CEF001FAAC0 /* PinterestClone.app */,
+				04BA407325773CF2001FAAC0 /* PinterestCloneTests.xctest */,
+				04BA407E25773CF2001FAAC0 /* PinterestCloneUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		04BA405F25773CEF001FAAC0 /* InstagramClone */ = {
+		04BA405F25773CEF001FAAC0 /* PinterestClone */ = {
+			isa = PBXGroup;
+			children = (
+				04BA409625773E3B001FAAC0 /* App */,
+				04BA409925773F21001FAAC0 /* Source */,
+				04BA409725773EE8001FAAC0 /* Resources */,
+				04BA409825773EFA001FAAC0 /* SupportingFiles */,
+				04BA406425773CEF001FAAC0 /* ViewController.swift */,
+			);
+			path = PinterestClone;
+			sourceTree = "<group>";
+		};
+		04BA407625773CF2001FAAC0 /* PinterestCloneTests */ = {
+			isa = PBXGroup;
+			children = (
+				04BA407725773CF2001FAAC0 /* PinterestCloneTests.swift */,
+				04BA407925773CF2001FAAC0 /* Info.plist */,
+			);
+			path = PinterestCloneTests;
+			sourceTree = "<group>";
+		};
+		04BA408125773CF2001FAAC0 /* PinterestCloneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04BA408225773CF2001FAAC0 /* PinterestCloneUITests.swift */,
+				04BA408425773CF2001FAAC0 /* Info.plist */,
+			);
+			path = PinterestCloneUITests;
+			sourceTree = "<group>";
+		};
+		04BA409625773E3B001FAAC0 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				04BA406025773CEF001FAAC0 /* AppDelegate.swift */,
 				04BA406225773CEF001FAAC0 /* SceneDelegate.swift */,
-				04BA406425773CEF001FAAC0 /* ViewController.swift */,
-				04BA406625773CEF001FAAC0 /* Main.storyboard */,
-				04BA406925773CF2001FAAC0 /* Assets.xcassets */,
+				04BA40A325773FC9001FAAC0 /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		04BA409725773EE8001FAAC0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				04BA406B25773CF2001FAAC0 /* LaunchScreen.storyboard */,
+				04BA406925773CF2001FAAC0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04BA409825773EFA001FAAC0 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				04BA406E25773CF2001FAAC0 /* Info.plist */,
 			);
-			path = InstagramClone;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		04BA407625773CF2001FAAC0 /* InstagramCloneTests */ = {
+		04BA409925773F21001FAAC0 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				04BA407725773CF2001FAAC0 /* InstagramCloneTests.swift */,
-				04BA407925773CF2001FAAC0 /* Info.plist */,
+				04BA40A125773F96001FAAC0 /* Common */,
+				04BA40A225773F9F001FAAC0 /* Modules */,
 			);
-			path = InstagramCloneTests;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		04BA408125773CF2001FAAC0 /* InstagramCloneUITests */ = {
+		04BA40A125773F96001FAAC0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				04BA408225773CF2001FAAC0 /* InstagramCloneUITests.swift */,
-				04BA408425773CF2001FAAC0 /* Info.plist */,
+				04BA40A825773FCD001FAAC0 /* Base */,
 			);
-			path = InstagramCloneUITests;
+			path = Common;
+			sourceTree = "<group>";
+		};
+		04BA40A225773F9F001FAAC0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				04BA40BA25774146001FAAC0 /* Images */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		04BA40A825773FCD001FAAC0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				04BA40DE257743EB001FAAC0 /* DomainModels */,
+				04BA40DD257743E6001FAAC0 /* Views */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		04BA40BA25774146001FAAC0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				04BA40BE257741A9001FAAC0 /* ImagesCoordinator.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		04BA40DD257743E6001FAAC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04BA40A925773FE3001FAAC0 /* Coordinator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04BA40DE257743EB001FAAC0 /* DomainModels */ = {
+			isa = PBXGroup;
+			children = (
+				04BA40DF25774409001FAAC0 /* Store.swift */,
+				04BA40E425774419001FAAC0 /* ViewModelType.swift */,
+			);
+			path = DomainModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		04BA405C25773CEF001FAAC0 /* InstagramClone */ = {
+		04BA405C25773CEF001FAAC0 /* PinterestClone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04BA408725773CF2001FAAC0 /* Build configuration list for PBXNativeTarget "InstagramClone" */;
+			buildConfigurationList = 04BA408725773CF2001FAAC0 /* Build configuration list for PBXNativeTarget "PinterestClone" */;
 			buildPhases = (
 				04BA405925773CEF001FAAC0 /* Sources */,
 				04BA405A25773CEF001FAAC0 /* Frameworks */,
@@ -143,14 +235,14 @@
 			);
 			dependencies = (
 			);
-			name = InstagramClone;
-			productName = InstagramClone;
-			productReference = 04BA405D25773CEF001FAAC0 /* InstagramClone.app */;
+			name = PinterestClone;
+			productName = PinterestClone;
+			productReference = 04BA405D25773CEF001FAAC0 /* PinterestClone.app */;
 			productType = "com.apple.product-type.application";
 		};
-		04BA407225773CF2001FAAC0 /* InstagramCloneTests */ = {
+		04BA407225773CF2001FAAC0 /* PinterestCloneTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04BA408A25773CF2001FAAC0 /* Build configuration list for PBXNativeTarget "InstagramCloneTests" */;
+			buildConfigurationList = 04BA408A25773CF2001FAAC0 /* Build configuration list for PBXNativeTarget "PinterestCloneTests" */;
 			buildPhases = (
 				04BA406F25773CF2001FAAC0 /* Sources */,
 				04BA407025773CF2001FAAC0 /* Frameworks */,
@@ -161,14 +253,14 @@
 			dependencies = (
 				04BA407525773CF2001FAAC0 /* PBXTargetDependency */,
 			);
-			name = InstagramCloneTests;
-			productName = InstagramCloneTests;
-			productReference = 04BA407325773CF2001FAAC0 /* InstagramCloneTests.xctest */;
+			name = PinterestCloneTests;
+			productName = PinterestCloneTests;
+			productReference = 04BA407325773CF2001FAAC0 /* PinterestCloneTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		04BA407D25773CF2001FAAC0 /* InstagramCloneUITests */ = {
+		04BA407D25773CF2001FAAC0 /* PinterestCloneUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04BA408D25773CF2001FAAC0 /* Build configuration list for PBXNativeTarget "InstagramCloneUITests" */;
+			buildConfigurationList = 04BA408D25773CF2001FAAC0 /* Build configuration list for PBXNativeTarget "PinterestCloneUITests" */;
 			buildPhases = (
 				04BA407A25773CF2001FAAC0 /* Sources */,
 				04BA407B25773CF2001FAAC0 /* Frameworks */,
@@ -179,9 +271,9 @@
 			dependencies = (
 				04BA408025773CF2001FAAC0 /* PBXTargetDependency */,
 			);
-			name = InstagramCloneUITests;
-			productName = InstagramCloneUITests;
-			productReference = 04BA407E25773CF2001FAAC0 /* InstagramCloneUITests.xctest */;
+			name = PinterestCloneUITests;
+			productName = PinterestCloneUITests;
+			productReference = 04BA407E25773CF2001FAAC0 /* PinterestCloneUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +298,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 04BA405825773CEF001FAAC0 /* Build configuration list for PBXProject "InstagramClone" */;
+			buildConfigurationList = 04BA405825773CEF001FAAC0 /* Build configuration list for PBXProject "PinterestClone" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +311,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				04BA405C25773CEF001FAAC0 /* InstagramClone */,
-				04BA407225773CF2001FAAC0 /* InstagramCloneTests */,
-				04BA407D25773CF2001FAAC0 /* InstagramCloneUITests */,
+				04BA405C25773CEF001FAAC0 /* PinterestClone */,
+				04BA407225773CF2001FAAC0 /* PinterestCloneTests */,
+				04BA407D25773CF2001FAAC0 /* PinterestCloneUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,7 +325,6 @@
 			files = (
 				04BA406D25773CF2001FAAC0 /* LaunchScreen.storyboard in Resources */,
 				04BA406A25773CF2001FAAC0 /* Assets.xcassets in Resources */,
-				04BA406825773CEF001FAAC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +349,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BA40E025774409001FAAC0 /* Store.swift in Sources */,
+				04BA40BF257741A9001FAAC0 /* ImagesCoordinator.swift in Sources */,
+				04BA40A425773FC9001FAAC0 /* AppCoordinator.swift in Sources */,
 				04BA406525773CEF001FAAC0 /* ViewController.swift in Sources */,
+				04BA40E525774419001FAAC0 /* ViewModelType.swift in Sources */,
+				04BA40AA25773FE3001FAAC0 /* Coordinator.swift in Sources */,
 				04BA406125773CEF001FAAC0 /* AppDelegate.swift in Sources */,
 				04BA406325773CEF001FAAC0 /* SceneDelegate.swift in Sources */,
 			);
@@ -268,7 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04BA407825773CF2001FAAC0 /* InstagramCloneTests.swift in Sources */,
+				04BA407825773CF2001FAAC0 /* PinterestCloneTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04BA408325773CF2001FAAC0 /* InstagramCloneUITests.swift in Sources */,
+				04BA408325773CF2001FAAC0 /* PinterestCloneUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,25 +381,17 @@
 /* Begin PBXTargetDependency section */
 		04BA407525773CF2001FAAC0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 04BA405C25773CEF001FAAC0 /* InstagramClone */;
+			target = 04BA405C25773CEF001FAAC0 /* PinterestClone */;
 			targetProxy = 04BA407425773CF2001FAAC0 /* PBXContainerItemProxy */;
 		};
 		04BA408025773CF2001FAAC0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 04BA405C25773CEF001FAAC0 /* InstagramClone */;
+			target = 04BA405C25773CEF001FAAC0 /* PinterestClone */;
 			targetProxy = 04BA407F25773CF2001FAAC0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		04BA406625773CEF001FAAC0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04BA406725773CEF001FAAC0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04BA406B25773CF2001FAAC0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,12 +526,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DAB2NZFLN5;
-				INFOPLIST_FILE = InstagramClone/Info.plist;
+				INFOPLIST_FILE = PinterestClone/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ltt.ios.InstagramClone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ltt.ios.PinterestClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,12 +546,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DAB2NZFLN5;
-				INFOPLIST_FILE = InstagramClone/Info.plist;
+				INFOPLIST_FILE = PinterestClone/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ltt.ios.InstagramClone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ltt.ios.PinterestClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -476,18 +566,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DAB2NZFLN5;
-				INFOPLIST_FILE = InstagramCloneTests/Info.plist;
+				INFOPLIST_FILE = PinterestCloneTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ltt.ios.InstagramCloneTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ltt.ios.PinterestCloneTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstagramClone.app/InstagramClone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinterestClone.app/PinterestClone";
 			};
 			name = Debug;
 		};
@@ -498,18 +588,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DAB2NZFLN5;
-				INFOPLIST_FILE = InstagramCloneTests/Info.plist;
+				INFOPLIST_FILE = PinterestCloneTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ltt.ios.InstagramCloneTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ltt.ios.PinterestCloneTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstagramClone.app/InstagramClone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinterestClone.app/PinterestClone";
 			};
 			name = Release;
 		};
@@ -519,17 +609,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DAB2NZFLN5;
-				INFOPLIST_FILE = InstagramCloneUITests/Info.plist;
+				INFOPLIST_FILE = PinterestCloneUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ltt.ios.InstagramCloneUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ltt.ios.PinterestCloneUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = InstagramClone;
+				TEST_TARGET_NAME = PinterestClone;
 			};
 			name = Debug;
 		};
@@ -539,24 +629,24 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DAB2NZFLN5;
-				INFOPLIST_FILE = InstagramCloneUITests/Info.plist;
+				INFOPLIST_FILE = PinterestCloneUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ltt.ios.InstagramCloneUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ltt.ios.PinterestCloneUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = InstagramClone;
+				TEST_TARGET_NAME = PinterestClone;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04BA405825773CEF001FAAC0 /* Build configuration list for PBXProject "InstagramClone" */ = {
+		04BA405825773CEF001FAAC0 /* Build configuration list for PBXProject "PinterestClone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04BA408525773CF2001FAAC0 /* Debug */,
@@ -565,7 +655,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04BA408725773CF2001FAAC0 /* Build configuration list for PBXNativeTarget "InstagramClone" */ = {
+		04BA408725773CF2001FAAC0 /* Build configuration list for PBXNativeTarget "PinterestClone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04BA408825773CF2001FAAC0 /* Debug */,
@@ -574,7 +664,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04BA408A25773CF2001FAAC0 /* Build configuration list for PBXNativeTarget "InstagramCloneTests" */ = {
+		04BA408A25773CF2001FAAC0 /* Build configuration list for PBXNativeTarget "PinterestCloneTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04BA408B25773CF2001FAAC0 /* Debug */,
@@ -583,7 +673,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04BA408D25773CF2001FAAC0 /* Build configuration list for PBXNativeTarget "InstagramCloneUITests" */ = {
+		04BA408D25773CF2001FAAC0 /* Build configuration list for PBXNativeTarget "PinterestCloneUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04BA408E25773CF2001FAAC0 /* Debug */,
