@@ -8,12 +8,13 @@
 import Foundation
 
 struct ImageCollection: Codable {
-    let id: Int
-    let title, imageCollectionDescription: String
-    let publishedAt, lastCollectedAt, updatedAt: Date
+    let id: String
+    let title: String
+    let imageCollectionDescription: String?
+    let publishedAt, lastCollectedAt, updatedAt: String
     let totalPhotos: Int
     let imageCollectionPrivate: Bool
-    let shareKey: String
+    let shareKey: String?
     let coverPhoto: CoverPhoto
     let user: User
     let links: ImageCollectionLinks
@@ -39,7 +40,7 @@ struct CoverPhoto: Codable {
     let color, blurHash: String
     let likes: Int
     let likedByUser: Bool
-    let coverPhotoDescription: String
+    let coverPhotoDescription: String?
     let user: User
     let urls: Urls
     let links: CoverPhotoLinks
@@ -73,12 +74,12 @@ struct Urls: Codable {
 // MARK: - User
 struct User: Codable {
     let id, username, name: String
-    let portfolioURL: String
-    let bio, location: String
+    let portfolioURL: String?
+    let bio, location: String?
     let totalLikes, totalPhotos, totalCollections: Int
     let profileImage: ProfileImage
     let links: UserLinks
-    let updatedAt: Date?
+    let updatedAt: String?
 
     enum CodingKeys: String, CodingKey {
         case id, username, name

@@ -7,60 +7,107 @@
 
 import Foundation
 import Combine
+import UIKit
 
 class CollectionsViewModel: ViewModelType {
     
-    struct Input {
-        let loadCollections: AnyPublisher<Void, Never>
-        let showDetailCollection: AnyPublisher<Int, Never>
-    }
+    private var bag = Set<AnyCancellable>()
     
-    enum Action {
-        case loadCollections
+    @Published private(set) var state = State.idle
+    
+    private let input = PassthroughSubject<Event, Never>()
+    
+    enum Event {
+        case refreshCollections
+        case loadMoreCollections(Int)
         case loadedCollections([ImageCollection])
-        case showDetailCollection(Int)
+        case error(Error)
+        case clearError
     }
     
-    struct State {
-        var collections: [ImageCollection] = []
-        var detailToShow: Int? = nil
-    }
-    
-    struct Output {
-        let collections: AnyPublisher<[ImageCollection], Never>
-        let showDetail: AnyPublisher<Int, Never>
-    }
-    
-    func transform(environment: Environment) -> (Input) -> Output {
+    enum State {
+        case idle
+        case loading(Int)
+        case loadded([ImageCollectionItem])
+        case error(Error)
         
-        let request = requestCollections(environment: environment)
-        
-        return { input in
-            let store = Store<Action, State, Environment>(initial: State(), environment: environment) { (state, action, environment) -> AnyPublisher<Action, Never> in
-                switch action {
-                case .loadCollections:
-                    return request
-                case .loadedCollections(let collections):
-                    state.collections = collections
-                    state.detailToShow = nil
-                case .showDetailCollection(let detailToShow):
-                    state.detailToShow = detailToShow
-                }
-                return Empty(completeImmediately: false).eraseToAnyPublisher()
+        var isLoadding: Bool {
+            switch self {
+            case .loading:
+                return true
+            default:
+                return false
             }
-            
-            let action = Publishers.Merge(input.loadCollections.map { Action.loadCollections },
-                                          input.showDetailCollection.map { Action.showDetailCollection($0) })
-            
-            action.subscribe(store)
-            
-            return Output(collections: store.state.map { $0.collections }.eraseToAnyPublisher(),
-                          showDetail: store.state.compactMap { $0.detailToShow }.eraseToAnyPublisher())
         }
+    }
+    
+    init() {
+        Publishers.system(initial: state,
+                          reduce: Self.reduce(state:event:),
+                          scheduler: RunLoop.main,
+                          feedbacks: [Self.whenLoading(), Self.userInput(input: input.eraseToAnyPublisher())])
+            .assign(to: \.state, on: self)
+            .store(in: &bag)
+    }
+    
+    func send(event: Event) {
+        input.send(event)
     }
     
 }
 
-private func requestCollections(environment: Environment) -> AnyPublisher<CollectionsViewModel.Action, Never> {
-    return Empty(completeImmediately: false).map { CollectionsViewModel.Action.loadedCollections([]) }.eraseToAnyPublisher()
+extension CollectionsViewModel {
+    
+    static func reduce(state: State, event: Event) -> State {
+        switch state {
+        case .idle:
+            switch event {
+            case .refreshCollections:
+                return .loading(1)
+            default:
+                return state
+            }
+        case .loading:
+            switch event {
+            case .error(let error):
+                return .error(error)
+            case .loadedCollections(let collections):
+                return .loadded(collections.map({ ImageCollectionItem(id: $0.id, title: $0.title,
+                                                                      coverImageURL: $0.coverPhoto.urls.thumb,
+                                                                      imageSize: CGSize(width: $0.coverPhoto.width,
+                                                                                        height: $0.coverPhoto.height)) }))
+            default:
+                return state
+            }
+        case .loadded:
+            switch event {
+            case .loadMoreCollections(let page):
+                return .loading(page)
+            default:
+                return state
+            }
+        case .error:
+            switch event {
+            case .clearError:
+                return .idle
+            default:
+                return state
+            }
+        }
+    }
+    
+    static func whenLoading() -> Feedback<State, Event> {
+        Feedback { (state: State) -> AnyPublisher<Event, Never> in
+            guard case .loading(let page) = state else { return Empty().eraseToAnyPublisher() }
+            return CollectionsService().fetchCollections(page: page, itemPerPage: 40)
+                .map{ Event.loadedCollections($0) }
+                .catch { Just(Event.error($0)) }
+                .eraseToAnyPublisher()
+        }
+    }
+    
+    static func userInput(input: AnyPublisher<Event, Never>) -> Feedback<State, Event> {
+        Feedback { _ in input }
+    }
+    
 }

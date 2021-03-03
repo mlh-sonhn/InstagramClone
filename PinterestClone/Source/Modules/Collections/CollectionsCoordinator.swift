@@ -14,6 +14,7 @@ class CollectionsCoordinator: Coordinator {
         let collectionsViewController = CollectionsViewController.instantiateFromStoryboard()
         collectionsViewController.viewModel = CollectionsViewModel()
         collectionsViewController.coordinator = self
+        collectionsViewController.environment = CollectionsService()
         navigationController.viewControllers = [collectionsViewController]
     }
     
