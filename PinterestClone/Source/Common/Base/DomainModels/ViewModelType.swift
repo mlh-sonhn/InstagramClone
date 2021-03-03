@@ -7,15 +7,7 @@
 
 import Foundation
 
-protocol Environment {
-}
-
 protocol ViewModelType {
-
-    associatedtype Input
-    associatedtype Action
     associatedtype State
-    associatedtype Output
-
-    func transform(environment: Environment) -> (_ input: Input) -> Output
+    associatedtype Event
 }
